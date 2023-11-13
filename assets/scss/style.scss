@@ -1,0 +1,80 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Rubik;
+  font-size: 1.6rem;
+}
+
+$red: #F53838;
+
+div#bg-color{
+  width: 96%;
+  border-radius: 20px;
+  position: relative;
+  top: 0;
+  left: 2%;
+  transition: background-color 200ms ease-in-out;
+
+}
+div.bg-color {
+  background-color: #FDFDFD;
+
+}
+
+div#content-all {
+  width: 80%;
+  margin: 0 auto;
+  transition: background-color 200ms ease-in-out;
+}
+
+.color-content-hover:hover { 
+  // ordem decrescente de paleta de cores que gostei
+  // background-color: #332023;
+  // background-color: #614F52;
+  // background-color: #30235B;
+  // background-color: #0B132A;
+  // background-color: #1E315C;
+  background-color: rgba(0, 0, 0, 0.884);
+}
+.color-content-not-hover {
+  // transition: background-color 200ms ease-in-out;
+  background-color: #FFF !important;
+}
+
+.color-white {
+  color: white !important;
+}
+
+.toggle-color {
+  transition: color 200ms ease-in-out;
+}
+
+.navegation-link {
+  position: relative;
+}
+
+.navegation-link::after {
+  content: '';
+  position: absolute;
+  bottom: -.5rem;
+  left: 50%;
+  width: 0;
+  height: 0.2rem;
+  background: $red; 
+  transition: all 300ms ease-in-out;
+  z-index: 99;
+}
+
+.navegation-link:hover::after {
+  width: 50%;
+  left: 25%;
+  z-index: 99;
+}
+
+@import 'partials/_head.scss';
+@import 'partials/_intro.scss';

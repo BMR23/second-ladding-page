@@ -1,0 +1,68 @@
+header {
+  height: max-content;
+  padding: 2rem 0;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+  font-size: 1.6rem;
+
+}
+
+li:not(.maior) > a {
+  padding: 0 clamp(.5rem, 2.5vw, 2rem);
+  color: #4F5665;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.maior {
+  flex-grow: 2;
+  div {
+    display: flex;
+    align-items: center;
+  }
+    
+  img {
+    position: relative;
+    height: 30px;
+    top: -.1rem;
+    left: -5px;
+  }
+  h1, h2 {
+    color: #0B132A;
+    display: inline-block;
+    font-size: 1.8rem;
+  }
+  h1 > strong {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  
+  #sign-up {
+    background-color: white;
+    color:$red;
+    padding: 1rem 5rem;
+    border-radius: 2.3491rem;
+    border: 0.47px solid $red;
+    margin-left: 1rem;
+    transition: background-color 300ms ease-in-out ;
+    transition: color 500ms ease-in-out;
+  }
+  #sign-up:hover {
+    background-color:$red;
+    color:white
+  }
+}
+
+#last>div {
+  justify-content: flex-end;
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+}
+
