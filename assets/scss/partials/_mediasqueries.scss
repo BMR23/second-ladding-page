@@ -1,0 +1,46 @@
+@media (max-width: 1200px) {
+  .container-img-text {
+    flex-direction: column;
+
+    & .text {
+      width: 100%;
+      flex: 0;
+      min-width: 300px;
+      text-align: center;
+      padding: 5rem 0 4rem 0;
+
+      h2, p, ul {
+        text-align: center;
+        width: 100%;
+      }
+      ul {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        // justify-content: center;
+
+        li {
+          width: 305px;
+        }
+
+        img {
+          max-width: 30px;
+          
+        }
+      }
+    }
+
+  
+    & img {
+      max-width: 1000px;
+      width: auto;
+    }
+  }
+}
+
+@media (max-width: 1180px) {
+  header {
+    display: none;
+  }
+  
+}

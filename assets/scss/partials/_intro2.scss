@@ -1,0 +1,40 @@
+div#_intro-2 {
+  background-color: white;
+  padding: 4rem;
+  margin: 4rem 0;
+  display: flex;
+  justify-content: space-around;
+  border-color: black;
+  box-shadow: 8px 5px 13px 10px rgba(0, 0, 0, 0.021);
+  border-radius: 0.4698em;
+
+  & nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+
+    .container-icon-intro {
+      border-radius: 50%;
+      background: #FFECEC;
+      padding: 1.2rem 1.5rem;
+
+
+      img {
+        margin-top: 2px;
+        height: 30px;
+      }
+    }
+
+
+    .container-information-intro {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
